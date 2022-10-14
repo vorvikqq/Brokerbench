@@ -1986,7 +1986,7 @@ html {
 }
 
 .banner__body {
-  background: url("../img/banner/background.png") 50% 50% no-repeat;
+  background: url("../img/background.png") 50% 50% no-repeat;
   background-size: cover;
   border-radius: 8px;
 }
