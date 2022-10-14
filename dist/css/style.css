@@ -3652,6 +3652,11 @@ body.overflow {
             transform: scale(0.7);
   }
 
+  .process__card:hover {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+
   .process__text {
     background-size: 20px;
   }
@@ -3966,6 +3971,13 @@ body.overflow {
   }
 }
 
+@media (max-width: 357px) {
+  .convenience__images {
+    -webkit-transform: translateX(-539px);
+            transform: translateX(-539px);
+  }
+}
+
 @media (max-width: 353px) {
   .process__body {
     -webkit-transform: scale(0.8) translateX(-25px);
@@ -3988,6 +4000,13 @@ body.overflow {
 
   .stop__title {
     margin-bottom: -25px;
+  }
+}
+
+@media (max-width: 347px) {
+  .convenience__images {
+    -webkit-transform: translateX(-546px);
+            transform: translateX(-546px);
   }
 }
 

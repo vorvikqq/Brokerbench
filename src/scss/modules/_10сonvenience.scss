@@ -298,6 +298,16 @@
        
     }
 }
+@media (max-width: 357px) {
+    .convenience__images {
+         transform: translateX(-539px); 
+    }
+}
+@media (max-width: 347px) {
+    .convenience__images {
+         transform: translateX(-546px);
+    }
+}
 @media (max-width: 340px) {
     .convenience__images{
         transform: translateX(-550px);

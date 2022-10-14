@@ -320,6 +320,9 @@
     }
     .process__card{
         transform: scale(.7);
+        &:hover{
+            transform: scale(.75);
+        }
     }
     .process__text{
         background-size: 20px;
