@@ -1,0 +1,57 @@
+$maxWidth: 1440; // задать нужную ширину макета
+@mixin adaptiv-font($pcSize, $mobSize) {
+	 $addSize: $pcSize - $mobSize;
+	 $maxWidth: $maxWidth - 320;
+	 font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-padding($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	padding: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-padding-top($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	padding-top: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-padding-bottom($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	padding-bottom: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-padding-right($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	padding-right: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-padding-left($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	padding-left: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-width($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	width: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-height($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-margin-bottom($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	margin-bottom: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-margin-top($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	margin-top: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+@mixin adaptiv-margin-right($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	margin-right: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})); 
+}
+

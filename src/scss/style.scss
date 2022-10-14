@@ -1,0 +1,118 @@
+@import "modules/reset";
+@import "fonts";
+@import "modules/icons";
+@import "modules/collapse";
+@import "modules/adaptive-styles";
+@import "modules/_1header";
+@import "modules/_2run";
+@import "modules/_3company";
+@import "modules/_4problem";
+@import "modules/_5stop";
+@import "modules/_6solution";
+@import "modules/_7loan";
+@import "modules/_8process";
+@import "modules/_9activities";
+@import "modules/_10сonvenience";
+@import "modules/_11questions";
+@import "modules/_12banner";
+@import "modules/_13footer";
+body{
+    font-family: "raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    height: 2000px;
+    overflow-x: hidden;
+    &.overflow{
+        overflow: hidden;
+    }
+}
+.main{
+    overflow-x: hidden;
+
+}
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.link{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        opacity: 0;
+        background-color: #fff;
+        transition: all .3s ease 0s;
+    }
+    &:hover::before{
+        width: 100%;
+        opacity: 1;
+    }
+}
+.button__wrapper{
+    text-align: center;
+}
+.button{
+    transition: all .3s ease 0s;
+    &:hover{
+        transform: scale(1.05);
+    }
+    display: inline-block;
+}
+.button__link{
+    font-weight: 700;    
+    background: #FFD803;
+    @include adaptiv-font(21,15);
+    @include adaptiv-padding-top(27,20);
+    @include adaptiv-padding-bottom(27,20);
+    @include adaptiv-padding-left(37,27);
+    @include adaptiv-padding-right(101,76);
+    border-radius: 8px;
+    line-height: 155%;
+    color: #1A1A1A;
+    text-decoration: none;       
+    position: relative;
+    &::after{
+        content: '';
+        background: url('../img/run/button-arrow.jpg') center center no-repeat;
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        @include adaptiv-width(50,36);
+        @include adaptiv-height(50,36);
+    }
+}
+.wrapper__2{
+    background: #392396;
+    border-radius: 3px;
+}
+
+.button__style-2{
+    border: 1px solid #1A1A1A;
+    border-radius: 8px;
+    padding: 24px 43px;
+    display: inline-block;
+    cursor: pointer;
+    .button__style-2-link{
+        font-weight: 600;
+        padding-right: 29px;
+        text-decoration: none;
+        @include adaptiv-font(21,17);
+        line-height: 123%;
+        color: #1A1A1A;
+        background: url('../img/convenience/text-arrow.svg') 99% 5px no-repeat;
+        transition: all .3s ease 0s;
+        
+    }
+    &:hover{
+        .button__style-2-link{
+            background-position: 100% 5px;
+        }        
+    }
+}
