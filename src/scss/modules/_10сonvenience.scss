@@ -274,6 +274,11 @@
        
     }
 }
+@media (max-width: 488px) {
+    .convenience__images {
+        transform: translateX(-476px);
+   }
+}
 @media (max-width: 468px) {
     .convenience__images{
         transform: translateX(-480px);
@@ -285,6 +290,11 @@
         transform: translateX(-500px);
        
     }
+}
+@media (max-width: 415px) {
+    .convenience__images {
+        transform: translateX(-516px);
+   }
 }
 @media (max-width: 400px) {
     .convenience__images{
@@ -298,7 +308,7 @@
        
     }
 }
-@media (max-width: 357px) {
+@media (max-width: 359px) {
     .convenience__images {
          transform: translateX(-539px); 
     }
