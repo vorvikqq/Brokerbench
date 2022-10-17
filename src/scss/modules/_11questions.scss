@@ -89,6 +89,7 @@
         text-align: center;   
         line-height: 10px;  
         margin-top: -9px; 
+        margin-left: 2px;
     }
     @include adaptiv-margin-bottom(25,16);
 }
@@ -107,6 +108,11 @@
 @media (max-width: 1000px) {
     .questions__body {
         column-gap: 70px;
+    }
+}
+@media (max-width: 958px) {
+    .questions__button-link{
+        background-position: 95% 1px;
     }
 }
 @media (max-width: 768px) {
@@ -132,5 +138,8 @@
 @media (max-width: 425px) {
     .answers__item{
         padding-bottom: 10px;
+    }
+    .questions__button-link{
+        background-position: 95% 0px;
     }
 }
